@@ -5,6 +5,7 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
 public final class BankTransfer implements Serializable {
+    @Serial
     private static final long serialVersionUID = 1L;
 
     public final String name;
