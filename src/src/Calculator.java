@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Calculator {
-    private float result;
-    private List<Float> history;
+    private final float result;
+    private final List<Float> history;
 
 
     public Calculator() {
@@ -36,7 +36,7 @@ public class Calculator {
 
     public String displayHistory() {
         var sb = new StringBuilder();
-        for(var value : history) sb.append(value + " ");
+        for(var value : history) sb.append(value).append(" ");
 
         return sb.toString().trim();
     }
